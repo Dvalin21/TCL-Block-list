@@ -1,0 +1,37 @@
+! Title: TCL Smart TV Blocklist for AdGuard
+! Description: Blocks telemetry, ads, ACR screenshots, and updates for TCL Android TVs. Includes Xiaomi integrations and future-proof broad rules.
+! Version: 1.0 (Compiled December 18, 2025)
+! Homepage: Based on community sources (Reddit, GitHub blocklists)
+
+||tclota.tcl.com^
+||globalapi.ad.xiaomi.com^
+||tracking.tclclouds.com^
+||tvapi.tclclouds.com^
+||log.tclclouds.com^
+||us-east-api.tclclouds.com^
+||auth.tclclouds.com^
+||acr.tcl.com^
+||dsm.tcl.com^
+||weibo.tcl.com^
+||dcs.tcl.com^
+||global-oss.tcl.com^
+||logupload.tclclouds.com^
+||tvupgrade.tcl.com^
+||mcd.tcl.com^
+||analytics.tclclouds.com^
+||tracking.cdn.tcl.com^
+||tclclouds.com^
+||tcl.com^
+||ad.xiaomi.com^
+||mitv.tracking.intl.miui.com^
+||tracking.intl.miui.com^
+||data.mistat.intl.xiaomi.com^
+||sdkconfig.ad.intl.xiaomi.com^
+||hw-tdp-o.api.leiniao.com^
+||hwtpc-o.api.leiniao.com^
+
+! Future-proof broad blocks (catches new subdomains)
+||*.tcl.com^
+||*.tclclouds.com^
+||*.xiaomi.com^
+||*.miui.com^
