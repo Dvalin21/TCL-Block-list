@@ -1,37 +1,53 @@
-! Title: TCL Smart TV Blocklist for AdGuard
-! Description: Blocks telemetry, ads, ACR screenshots, and updates for TCL Android TVs. Includes Xiaomi integrations and future-proof broad rules.
-! Version: 1.0 (Compiled December 18, 2025)
-! Homepage: Based on community sources (Reddit, GitHub blocklists)
+############################################################
+# TCL HARDENED DNS BLOCKLIST (2026)
+############################################################
 
-||tclota.tcl.com^
-||globalapi.ad.xiaomi.com^
-||tracking.tclclouds.com^
-||tvapi.tclclouds.com^
-||log.tclclouds.com^
-||us-east-api.tclclouds.com^
-||auth.tclclouds.com^
-||acr.tcl.com^
-||dsm.tcl.com^
-||weibo.tcl.com^
-||dcs.tcl.com^
-||global-oss.tcl.com^
-||logupload.tclclouds.com^
-||tvupgrade.tcl.com^
-||mcd.tcl.com^
-||analytics.tclclouds.com^
-||tracking.cdn.tcl.com^
-||tclclouds.com^
+############################
+# CORE KNOWN TCL ENDPOINTS
+############################
+
 ||tcl.com^
-||ad.xiaomi.com^
-||mitv.tracking.intl.miui.com^
-||tracking.intl.miui.com^
-||data.mistat.intl.xiaomi.com^
-||sdkconfig.ad.intl.xiaomi.com^
-||hw-tdp-o.api.leiniao.com^
-||hwtpc-o.api.leiniao.com^
+||api.tcl.com^
+||log.tcl.com^
+||analytics.tcl.com^
+||tracking.tcl.com^
+||ads.tcl.com^
+||config.tcl.com^
+||device.tcl.com^
+||iot.tcl.com^
+||msg.tcl.com^
 
-! Future-proof broad blocks (catches new subdomains)
-||*.tcl.com^
-||*.tclclouds.com^
-||*.xiaomi.com^
-||*.miui.com^
+############################
+# HISTORICAL / IOC SOURCES
+############################
+
+amc.tcl.com
+aps.tcl.com
+pff.tcl.com
+tclpff.com
+tclclouds.com
+
+############################
+# RELATED TCL DOMAINS
+############################
+
+||tcltv.com^
+||tclcloud.com^
+||tclpff.com^
+
+############################
+# SMART TV ECOSYSTEM (OPTIONAL BUT STRONG)
+############################
+
+||samsungacr.com^
+||samsungads.com^
+||lgsmartad.com^
+
+############################
+# GENERIC TRACKING BASELINE
+############################
+
+||google-analytics.com^
+||app-measurement.com^
+||doubleclick.net^
+||scorecardresearch.com^
