@@ -69,3 +69,5 @@ Certs
 ||crl.verisign.com^
 ||crl.xrampsecurity.com^
 ||fedir.comsign.co.il^
+############################
+||dnscheck.internet-measurement.com^
